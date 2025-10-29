@@ -30,11 +30,11 @@ def basic_usage_example():
     # 1. 加载配置
     print("\n1. 加载配置...")
     config = RAGConfig(
-        embedding_dim=512,          # 使用较小的嵌入维度
+        embedding_dim=1024,          # 使用较小的嵌入维度
         top_k_retrieval=5,          # 检索5个文档
         max_context_length=2048,    # 较短的上下文
         chunk_size=256,             # 较小的文档块
-        device="cpu",               # 使用CPU（可改为"cuda"如果有GPU）
+        # device="cpu",               # 使用CPU（可改为"cuda"如果有GPU）
         log_level="INFO"
     )
     
@@ -149,7 +149,8 @@ def performance_test_example():
     print("性能测试示例")
     print("="*60)
     
-    config = RAGConfig(device="cpu")
+    # config = RAGConfig(device="cpu")
+    config = RAGConfig(embedding_dim=1024)
     rag = RAGPipeline(config)
     
     # 创建测试查询
@@ -194,7 +195,8 @@ def interactive_demo():
     print("交互式演示")
     print("="*60)
     
-    config = RAGConfig(device="cpu")
+    # config = RAGConfig(device="cpu")
+    config = RAGConfig(embedding_dim=1024)
     rag = RAGPipeline(config)
     
     try:
