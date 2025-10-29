@@ -79,8 +79,7 @@ def test_config_module() -> bool:
         
         # 测试自定义配置
         custom_config = RAGConfig(
-            embedding_dim=512,
-            device="cpu",
+            embedding_dim=1024,
             top_k_retrieval=5
         )
         print(f"✓ 自定义配置创建成功")

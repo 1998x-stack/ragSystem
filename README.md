@@ -1,4 +1,5 @@
 # Modular RAG System with Qwen Models
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1D73sRXSy9-bYVIUDVC0Ihmy5cNPkSpnY?usp=sharing)
 
 A comprehensive, industrial-grade Retrieval-Augmented Generation (RAG) system built with a modular architecture, featuring hybrid retrieval strategies and advanced query processing.
 
